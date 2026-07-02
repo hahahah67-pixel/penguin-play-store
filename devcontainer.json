@@ -1,0 +1,14 @@
+{
+  "name": "Play Store (Codespaces / Web)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Play Store",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postAttachCommand": "bash .devcontainer/start.sh"
+}
